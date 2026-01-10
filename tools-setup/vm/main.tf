@@ -53,8 +53,7 @@ resource "azurerm_virtual_machine" "vm" {
 resource "azurerm_dns_a_record" "public_dns_record" {
   name                = var.name
   zone_name           = "srikanth553.store"
-  # resource_group_name = "rg-devops"
-  resource_group_name = var.rg_name
+  resource_group_name = "rg-devops"
   ttl                 = 3
   records             = [azurerm_public_ip.publicip.ip_address]
 }
@@ -62,8 +61,7 @@ resource "azurerm_dns_a_record" "public_dns_record" {
 resource "azurerm_dns_a_record" "private_dns_record" {
   name                = "${var.name}-int"
   zone_name           = "srikanth553.store"
-  # resource_group_name = "rg-devops"
-  resource_group_name = var.rg_name
+  resource_group_name = "rg-devops"
   ttl                 = 3
   records             = [azurerm_network_interface.privateip.private_ip_address]
 }
