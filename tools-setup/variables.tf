@@ -5,7 +5,9 @@ variable "tools" {
  }
 }
 }
-variable "rg_name" {}
+variable "rg_name" {
+    default = "rg-roboshop"
+}
 variable "rg_location" {
     default = "UK West"
 }
