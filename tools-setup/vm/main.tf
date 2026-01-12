@@ -69,10 +69,10 @@ resource "azurerm_linux_virtual_machine" "vm" {
   }
   source_image_id = "/subscriptions/f7fcf972-1a3d-456c-a347-914d12f8c308/resourceGroups/rg-roboshop/providers/Microsoft.Compute/images/local-devops-practice"
   
-  # Spot Details
-  priority        = "Spot"
-  max_bid_price   = -1
-  eviction_policy = "Deallocate"
+  # # Spot Details
+  # priority        = "Spot"
+  # max_bid_price   = -1
+  # eviction_policy = "Deallocate"
 }
 resource "azurerm_dns_a_record" "public_dns_record" {
   name                = var.name
