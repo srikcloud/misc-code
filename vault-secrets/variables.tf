@@ -21,5 +21,12 @@ variable "values" {
         CATALOGUE_PORT = 8080
       }
     }
-  }
-  }
+ ssh = {
+      secret = "roboshop-infra"
+      value = {
+        username = "azureuser"
+        password = "DevOps@123456"
+      }
+    }
+}
+}
