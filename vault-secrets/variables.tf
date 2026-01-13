@@ -45,7 +45,7 @@ variable "values" {
     shipping = {
       secret = "roboshop-dev"
       value = {
-        CART_ENDPOINT = "cart:8080"
+        CART_ENDPOINT = "cart-dev.srikanth553.store:8080"
         DB_HOST       = "mysql-dev.srikanth553.store"
         DB_USER       = "root"
         DB_PASS       = "RoboShop@1"
@@ -59,9 +59,9 @@ variable "values" {
     payment = {
       secret = "roboshop-dev"
       value = {
-        CART_HOST = "cart"
+        CART_HOST = "cart-dev.srikanth553.store"
         CART_PORT = "8080"
-        USER_HOST = "user"
+        USER_HOST = "user-dev.srikanth553.store"
         USER_PORT = "8080"
         AMQP_HOST = "rabbitmq-dev.srikanth553.store"
         AMQP_USER = "roboshop"
