@@ -75,6 +75,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
   # eviction_policy = "Deallocate"
 }
 resource "azurerm_dns_a_record" "public_dns_record" {
+  depends_on          = [ azurerm_linux_virtual_machine.vm ]
   name                = var.name
   zone_name           = "srikanth553.store"
   resource_group_name = "rg-devops"
