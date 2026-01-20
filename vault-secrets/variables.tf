@@ -18,7 +18,7 @@ variable "values" {
       value = {
         REDIS_HOST     = "redis-dev.srikanth553.store"
         CATALOGUE_HOST = "catalogue"
-        CATALOGUE_PORT = 8080
+        CATALOGUE_PORT = "8080"
       }
     }
 
@@ -80,15 +80,15 @@ variable "values" {
         payment_url    = "http://payment-dev.srikanth553.store:8080/"
         shipping_url   = "http://shipping-dev.srikanth553.store:8080/"
         CATALOGUE_HOST = "catalogue-dev.srikanth553.store"
-        CATALOGUE_PORT = 8080
+        CATALOGUE_PORT = "8080"
         USER_HOST      = "user-dev.srikanth553.store"
-        USER_PORT      = 8080
+        USER_PORT      = "8080"
         CART_HOST      = "cart-dev.srikanth553.store"
-        CART_PORT      = 8080
+        CART_PORT      = "8080"
         SHIPPING_HOST  = "shipping-dev.srikanth553.store"
-        SHIPPING_PORT  = 8080
+        SHIPPING_PORT  = "8080"
         PAYMENT_HOST   = "payment-dev.srikanth553.store"
-        PAYMENT_PORT   = 8080
+        PAYMENT_PORT   = "8080"
       }
     }
 
